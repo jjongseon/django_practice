@@ -1,5 +1,14 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" style="background-image: linear-gradient(to right, rgb(245,245,245) 65%, rgb(220, 0, 0) 35%);">
+
+<style>
+    hr {height: 1px;
+    color: #dbd9d9;
+    background-color: #dbd9d9;
+    border: none}
+</style>
+
+
 
 {% include 'head.html' %}
 
@@ -9,9 +18,7 @@
 
     {% block content %}
     {% endblock %}
-
-    {% include 'header.html' %}
-
-
+    <hr>
+    {% include 'footer.html' %}
 </body>
 </html>
