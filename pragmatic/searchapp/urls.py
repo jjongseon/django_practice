@@ -1,11 +1,12 @@
 
 from django.urls import path
 
-from searchapp.views import hello_world
+from searchapp.views import main,testpage
 
-app_name = 'searchapp'
+app_name = 'main'
 
 urlpatterns = [
-    path("hello_world/", hello_world, name='hello_world'),
+    path('', main, name='main'),
+    path('testpage/', testpage, name='testpage'),
 
 ]
